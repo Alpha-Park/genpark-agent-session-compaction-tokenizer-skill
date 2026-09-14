@@ -1,0 +1,33 @@
+{
+  "name": "genpark-agent-session-compaction-tokenizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Dynamic session context window tokenizer and dialogue compaction manager protecting system prompt anchors while enforcing token ceilings.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "session-management",
+  "tags": [
+    "token-compaction",
+    "context-window",
+    "session-history",
+    "tokenizer",
+    "llm-memory"
+  ],
+  "inputs": {
+    "messages": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "compaction_id": {
+      "type": "string"
+    },
+    "total_estimated_tokens": {
+      "type": "integer"
+    },
+    "retained_messages_count": {
+      "type": "integer"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
